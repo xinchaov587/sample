@@ -8,11 +8,7 @@
         </small>
         {{--<nav>--}}
             {{--<ul>--}}
-<<<<<<< HEAD
                 {{--<li><a href="{{ route('about') }}">关于</a></li>--}}
-=======
-                {{--<li><a href="/about">关于</a></li>--}}
->>>>>>> filling-layout-style
             {{--</ul>--}}
         {{--</nav>--}}
     </footer>
