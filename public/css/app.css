@@ -8416,6 +8416,8 @@ p {
   padding-top: 9px;
   font-weight: bold;
   /* footer */
+  /* sidebar */
+  /* forms */
 }
 
 #logo:hover {
@@ -8459,5 +8461,62 @@ p {
 #logo footer .slogon {
   font-size: 13px;
   font-weight: bold;
+}
+
+#logo aside section {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+#logo aside section:first-child {
+  border: 0;
+  padding-top: 0;
+}
+
+#logo aside section span {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1;
+}
+
+#logo section.user_info {
+  padding-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#logo section.user_info .gravatar {
+  float: none;
+  max-width: 70px;
+}
+
+#logo section.user_info h1 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 3px;
+  margin-top: 15px;
+}
+
+#logo .gravatar {
+  float: left;
+  margin-right: 10px;
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+#logo input,
+#logo textarea,
+#logo select,
+#logo .uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+}
+
+#logo input {
+  height: auto !important;
+}
+
+#logo .panel {
+  margin-top: 50px;
 }
 
