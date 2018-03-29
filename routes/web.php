@@ -20,3 +20,6 @@ Route::post('login', 'SessionsController@store')->name('login');
 Route::delete('logout', 'SessionsController@destroy')->name('logout');
 // 用户资料编辑
 Route::get('users/{user}/edit', 'UsersController@edit')->name('users.edit');
+
+// 用户激活
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
