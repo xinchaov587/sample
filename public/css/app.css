@@ -8418,6 +8418,8 @@ p {
   /* footer */
   /* sidebar */
   /* forms */
+  /* Users edit */
+  /* Users index */
 }
 
 #logo:hover {
@@ -8526,5 +8528,33 @@ p {
 
 #logo .panel {
   margin-top: 50px;
+}
+
+#logo .gravatar_edit {
+  margin: 15px auto;
+  text-align: center;
+}
+
+#logo .gravatar_edit .gravatar {
+  float: none;
+  max-width: 100px;
+}
+
+#logo .users {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+#logo .users li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#logo .users .delete-btn {
+  float: right;
+  position: relative;
+  right: 0;
 }
 

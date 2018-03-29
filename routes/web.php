@@ -18,3 +18,5 @@ Route::get('login', 'SessionsController@create')->name('login');
 Route::post('login', 'SessionsController@store')->name('login');
 // 用户登出
 Route::delete('logout', 'SessionsController@destroy')->name('logout');
+// 用户资料编辑
+Route::get('users/{user}/edit', 'UsersController@edit')->name('users.edit');
