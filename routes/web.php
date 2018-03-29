@@ -11,3 +11,10 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::get('signup', 'UsersController@create')->name('signup');
 // 用户资源路由
 Route::resource('users', 'UsersController');
+
+// 用户登录界面渲染
+Route::get('login', 'SessionsController@create')->name('login');
+// 用户登录逻辑
+Route::post('login', 'SessionsController@store')->name('login');
+// 用户登出
+Route::delete('logout', 'SessionsController@destroy')->name('logout');
