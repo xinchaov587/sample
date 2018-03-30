@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Mail;
+use App\Models\Status;
 
 class UsersController extends Controller
 {
@@ -32,7 +33,10 @@ class UsersController extends Controller
     // 用户信息也渲染
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $statuses = $user->statuses()
+            ->orderBy('created_at', 'desc')
+            ->paginate(30);
+        return view('users.show', compact('user', 'statuses'));
     }
 
     // 用户注册逻辑
